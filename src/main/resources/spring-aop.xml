@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <bean id="myMethodInterceptor" class="com.jza.aop_test.invoke.MyMethodInterceptor"/>
 
-    <aop:config proxy-target-class="true">
+    <aop:config>
         <aop:advisor advice-ref="myMethodInterceptor" pointcut="execution(* com.jza.aop_test.service.*.*(..))" />
     </aop:config>
 </beans>
