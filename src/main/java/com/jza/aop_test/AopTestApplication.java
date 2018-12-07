@@ -6,6 +6,7 @@ import com.jza.aop_test.event.EventListener;
 import com.jza.aop_test.event.EventTest;
 import com.jza.aop_test.event.PublisherTest;
 import java.util.Objects;
+import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
@@ -14,12 +15,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.scheduling.annotation.AsyncConfigurer;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 @SpringBootApplication
 @ImportResource(locations = {"classpath:spring-aop.xml"})
 @EnableScheduling
-public class AopTestApplication {
+@EnableAsync
+public class AopTestApplication implements AsyncConfigurer {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext run = null;
@@ -43,8 +48,8 @@ public class AopTestApplication {
 //                asyncTest.plusPlus(i);
 //            }
             //条件bean
-            ListService listService = run.getBean(ListService.class);
-            listService.show();
+//            ListService listService = run.getBean(ListService.class);
+//            listService.show();
             //计划任务
             //@@EnableScheduling @Scheduled
 
@@ -59,5 +64,14 @@ public class AopTestApplication {
             }
         }
 //        SpringApplication.run(AopTestApplication.class, args);
+    }
+
+    @Override
+    public Executor getAsyncExecutor() {
+        ThreadPoolTaskExecutor threadPoolTaskExecutor = new ThreadPoolTaskExecutor();
+        threadPoolTaskExecutor.setCorePoolSize(5);
+        threadPoolTaskExecutor.setMaxPoolSize(10);
+        threadPoolTaskExecutor.setQueueCapacity(20);
+        return threadPoolTaskExecutor;
     }
 }

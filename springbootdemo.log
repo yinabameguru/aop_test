@@ -1,0 +1,67 @@
+2018-12-07 13:45:34.361 DEBUG 7908 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2018-12-07 13:45:34.548  INFO 7908 --- [restartedMain] com.jza.aop_test.AopTestApplication      : Starting AopTestApplication on SKY-20181022UJA with PID 7908 (D:\workspace\11_28\aop_test\target\classes started by Administrator in D:\workspace\11_28\aop_test)
+2018-12-07 13:45:34.550  INFO 7908 --- [restartedMain] com.jza.aop_test.AopTestApplication      : No active profile set, falling back to default profiles: default
+2018-12-07 13:45:34.621  INFO 7908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-12-07 13:45:34.622  INFO 7908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2018-12-07 13:45:36.430  INFO 7908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-07 13:45:36.452  INFO 7908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-07 13:45:36.453  INFO 7908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-07 13:45:36.460  INFO 7908 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\jdk8\bin;D:\jdk8\jre\bin;D:\gradle-5.0-rc-5\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;.]
+2018-12-07 13:45:36.580  INFO 7908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-07 13:45:36.581  INFO 7908 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1959 ms
+2018-12-07 13:45:36.615  INFO 7908 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-07 13:45:36.619  INFO 7908 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-07 13:45:36.620  INFO 7908 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-07 13:45:36.620  INFO 7908 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-07 13:45:36.620  INFO 7908 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-07 13:45:37.063  INFO 7908 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-07 13:45:37.313  INFO 7908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-12-07 13:45:37.358  INFO 7908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-07 13:45:37.361  INFO 7908 --- [restartedMain] com.jza.aop_test.AopTestApplication      : Started AopTestApplication in 3.535 seconds (JVM running for 4.618)
+2018-12-07 13:45:47.371  INFO 7908 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-07 16:24:32.271  INFO 10084 --- [restartedMain] com.jza.aop_test.AopTestApplication      : Starting AopTestApplication on SKY-20181022UJA with PID 10084 (D:\workspace\11_28\aop_test\target\classes started by Administrator in D:\workspace\11_28\aop_test)
+2018-12-07 16:24:32.277  INFO 10084 --- [restartedMain] com.jza.aop_test.AopTestApplication      : No active profile set, falling back to default profiles: default
+2018-12-07 16:24:32.350  INFO 10084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-12-07 16:24:32.350  INFO 10084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2018-12-07 16:24:33.743  INFO 10084 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'aopTestApplication' of type [com.jza.aop_test.AopTestApplication$$EnhancerBySpringCGLIB$$66a81493] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-07 16:24:34.592  INFO 10084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-07 16:24:34.616  INFO 10084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-07 16:24:34.617  INFO 10084 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-07 16:24:34.625  INFO 10084 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\jdk8\bin;D:\jdk8\jre\bin;D:\gradle-5.0-rc-5\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;.]
+2018-12-07 16:24:34.747  INFO 10084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-07 16:24:34.748  INFO 10084 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2398 ms
+2018-12-07 16:24:34.783  INFO 10084 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-07 16:24:34.788  INFO 10084 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-07 16:24:34.788  INFO 10084 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-07 16:24:34.788  INFO 10084 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-07 16:24:34.788  INFO 10084 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-07 16:24:35.204  INFO 10084 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-07 16:24:35.399  INFO 10084 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2018-12-07 16:24:35.461  INFO 10084 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-12-07 16:24:35.509  INFO 10084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-07 16:24:35.512  INFO 10084 --- [restartedMain] com.jza.aop_test.AopTestApplication      : Started AopTestApplication in 3.966 seconds (JVM running for 5.051)
+2018-12-07 16:24:45.522  INFO 10084 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2018-12-07 16:24:45.524  INFO 10084 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-07 16:25:44.891  INFO 11976 --- [restartedMain] com.jza.aop_test.AopTestApplication      : Starting AopTestApplication on SKY-20181022UJA with PID 11976 (D:\workspace\11_28\aop_test\target\classes started by Administrator in D:\workspace\11_28\aop_test)
+2018-12-07 16:25:44.891  INFO 11976 --- [restartedMain] com.jza.aop_test.AopTestApplication      : No active profile set, falling back to default profiles: default
+2018-12-07 16:25:45.023  INFO 11976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-12-07 16:25:45.024  INFO 11976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2018-12-07 16:25:46.225  INFO 11976 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'aopTestApplication' of type [com.jza.aop_test.AopTestApplication$$EnhancerBySpringCGLIB$$16d3575a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-07 16:25:46.930  INFO 11976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-07 16:25:46.930  INFO 11976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-07 16:25:46.946  INFO 11976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-07 16:25:46.946  INFO 11976 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\jdk8\bin;D:\jdk8\jre\bin;D:\gradle-5.0-rc-5\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;.]
+2018-12-07 16:25:47.062  INFO 11976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-07 16:25:47.062  INFO 11976 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2037 ms
+2018-12-07 16:25:47.097  INFO 11976 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-07 16:25:47.113  INFO 11976 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-07 16:25:47.113  INFO 11976 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-07 16:25:47.113  INFO 11976 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-07 16:25:47.113  INFO 11976 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-07 16:25:47.532  INFO 11976 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-07 16:25:47.732  INFO 11976 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2018-12-07 16:25:47.791  INFO 11976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-12-07 16:25:47.841  INFO 11976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-07 16:25:47.844  INFO 11976 --- [restartedMain] com.jza.aop_test.AopTestApplication      : Started AopTestApplication in 3.795 seconds (JVM running for 4.852)
+2018-12-07 16:25:57.857  INFO 11976 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2018-12-07 16:25:57.861  INFO 11976 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

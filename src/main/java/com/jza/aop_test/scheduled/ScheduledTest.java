@@ -1,5 +1,6 @@
 package com.jza.aop_test.scheduled;
 
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
