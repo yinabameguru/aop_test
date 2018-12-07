@@ -1,6 +1,7 @@
 package com.jza.aop_test;
 
 import com.jza.aop_test.async.AsyncTest;
+import com.jza.aop_test.condition.ListService;
 import com.jza.aop_test.event.EventListener;
 import com.jza.aop_test.event.EventTest;
 import com.jza.aop_test.event.PublisherTest;
@@ -13,9 +14,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @ImportResource(locations = {"classpath:spring-aop.xml"})
+@EnableScheduling
 public class AopTestApplication {
 
     public static void main(String[] args) {
@@ -33,13 +36,21 @@ public class AopTestApplication {
 //        run.publishEvent(new EventTest(AopTestApplication.class, "jiao"));
 
 
-            //异步
-            AsyncTest asyncTest = run.getBean(AsyncTest.class);
-            for (int i = 0; i < 15; i++) {
-                asyncTest.plus(i);
-                asyncTest.plusPlus(i);
-            }
-            TimeUnit.SECONDS.sleep(5);
+//            //异步
+//            AsyncTest asyncTest = run.getBean(AsyncTest.class);
+//            for (int i = 0; i < 15; i++) {
+//               ] asyncTest.plus(i);
+//                asyncTest.plusPlus(i);
+//            }
+            //条件bean
+            ListService listService = run.getBean(ListService.class);
+            listService.show();
+            //计划任务
+            //@@EnableScheduling @Scheduled
+
+            TimeUnit.SECONDS.sleep(10);
+
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {

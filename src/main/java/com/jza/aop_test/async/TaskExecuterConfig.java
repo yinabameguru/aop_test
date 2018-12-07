@@ -12,7 +12,7 @@ public class TaskExecuterConfig implements AsyncConfigurer {
         ThreadPoolTaskExecutor threadPoolTaskExecutor = new ThreadPoolTaskExecutor();
         threadPoolTaskExecutor.setCorePoolSize(5);
         threadPoolTaskExecutor.setMaxPoolSize(10);
-        threadPoolTaskExecutor.setQueueCapacity(10);
+        threadPoolTaskExecutor.setQueueCapacity(20);
         return threadPoolTaskExecutor;
     }
 }

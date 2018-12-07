@@ -8,13 +8,17 @@ import org.springframework.stereotype.Component;
 public class AsyncTest {
 
     @Async
-    public void plus(int num1) {
-        System.out.println("Task1 " + (num1 + 1));
+    public void plus(int num) {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Task1 " + (num + 1));
+        }
     }
 
     @Async
     public void plusPlus(int num) {
-        System.out.println("Task2 " + (num + 2));
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Task2 " + (num + 2));
+        }
     }
 
 
