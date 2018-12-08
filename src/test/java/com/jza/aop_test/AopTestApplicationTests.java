@@ -2,6 +2,7 @@ package com.jza.aop_test;
 
 import com.jza.aop_test.dao.Student;
 import com.jza.aop_test.event.EventTest;
+import com.jza.aop_test.property.HellloService;
 import com.jza.aop_test.service.MyService;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,19 +19,22 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 @SpringBootTest
 public class AopTestApplicationTests {
 
-    @Autowired
-    MyService myService;
+//    @Autowired
+//    MyService myService;
+//
+//    @Autowired
+//    ContextHolder contextHolder;
 
     @Autowired
-    ContextHolder contextHolder;
+    HellloService hellloService;
 
 //    @Autowired
 //    ApplicationContext applicationContext;
 
     @Test
     public void contextLoads() {
-        myService.myService();
-        System.out.println("end");
+//        myService.myService();
+//        System.out.println("end");
 
 //        Student s1 = new Student(2);
 //        Student s2 = new Student(1);
@@ -44,10 +48,16 @@ public class AopTestApplicationTests {
 //        System.out.println("jza" + list.toString());
     }
 
+//    @Test
+//    public void eventTest() {
+//        ApplicationContext applicationContext = contextHolder.getApplicationContext();
+//        applicationContext.publishEvent(new EventTest(this, "jiao"));
+//    }
+
     @Test
-    public void eventTest() {
-        ApplicationContext applicationContext = contextHolder.getApplicationContext();
-        applicationContext.publishEvent(new EventTest(this, "jiao"));
+    public void helloServiceAutoConfigurationTest() {
+        String s = hellloService.sayHello();
+        System.out.println(s);
     }
 
 }
