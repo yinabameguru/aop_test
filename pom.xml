@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jza</groupId>
-    <artifactId>aop_test</artifactId>
+    <artifactId>spring_test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>aop_test</name>
+    <name>spring_test</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

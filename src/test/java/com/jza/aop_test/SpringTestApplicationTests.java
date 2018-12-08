@@ -17,7 +17,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AopTestApplicationTests {
+public class SpringTestApplicationTests {
 
 //    @Autowired
 //    MyService myService;

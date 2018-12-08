@@ -1,27 +1,21 @@
 package com.jza.aop_test;
 
-import com.jza.aop_test.property.HelloServiceProperties;
-import java.util.Objects;
-import java.util.concurrent.TimeUnit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.ImportResource;
-import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 //@ImportResource(locations = {"classpath:spring-aop.xml"})
 //@EnableScheduling
 //@EnableAsync
-public class AopTestApplication
+public class SpringTestApplication
 //    implements AsyncConfigurer
 {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext run = null;
 //        try {
-            SpringApplication springApplication = new SpringApplication(AopTestApplication.class);
+            SpringApplication springApplication = new SpringApplication(SpringTestApplication.class);
             run = springApplication.run(args);
 
             //监听
