@@ -3,9 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:aop="http://www.springframework.org/schema/aop"
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
-    <bean id="myMethodInterceptor" class="com.jza.aop_test.invoke.MyMethodInterceptor"/>
+    <bean id="myMethodInterceptor" class="com.jza.spring_test.invoke.MyMethodInterceptor"/>
 
     <aop:config>
-        <aop:advisor advice-ref="myMethodInterceptor" pointcut="execution(* com.jza.aop_test.service.*.*(..))" />
+        <aop:advisor advice-ref="myMethodInterceptor" pointcut="execution(* com.jza.aop_test.aop.service.*.*(..))" />
     </aop:config>
 </beans>

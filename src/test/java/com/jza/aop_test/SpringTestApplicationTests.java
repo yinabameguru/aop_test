@@ -1,19 +1,11 @@
 package com.jza.aop_test;
 
-import com.jza.aop_test.dao.Student;
-import com.jza.aop_test.event.EventTest;
-import com.jza.aop_test.property.HellloService;
-import com.jza.aop_test.service.MyService;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.concurrent.TimeUnit;
+import com.jza.spring_test.property.HellloService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.web.context.support.WebApplicationContextUtils;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
