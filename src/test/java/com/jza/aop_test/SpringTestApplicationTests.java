@@ -1,14 +1,15 @@
 package com.jza.aop_test;
 
 import com.jza.spring_test.property.HellloService;
+import java.util.ArrayList;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class SpringTestApplicationTests {
 
 //    @Autowired
@@ -25,6 +26,15 @@ public class SpringTestApplicationTests {
 
     @Test
     public void contextLoads() {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        String s = list.toString();
+        System.out.println(s);
+        s = s.substring(1, s.length() - 1);
+        System.out.println(s);
+        s = s.replace(", ", ",");
+        System.out.println(s);
 //        myService.myService();
 //        System.out.println("end");
 
