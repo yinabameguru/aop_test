@@ -8,19 +8,22 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-@Document
+//@Document
 public class Person implements Serializable {
 
-    @Id
+//    @Id
     private Long id;
     private String name;
     private Integer age;
-    @Field("locs")
+//    @Field("locs")
     private Collection<Location> locations = new LinkedHashSet<>();
 
     public Person(String name, Integer age) {
         this.name = name;
         this.age = age;
+    }
+
+    public Person() {
     }
 
     public Long getId() {
